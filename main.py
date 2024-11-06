@@ -11,26 +11,32 @@ class MeuAplicativo(App):
     
     def d4(self):
         resultado = random.randint(1, 4)
-        print(resultado)
+        resultado = str(resultado)
+        self.root.ids["resultado"].text = resultado
     
     def d6(self):
         resultado = random.randint(1, 6)
-        print(resultado)
+        resultado = str(resultado)
+        self.root.ids["resultado"].text = resultado
         
     def d8(self):
         resultado = random.randint(1, 8)
-        print(resultado)
+        resultado = str(resultado)
+        self.root.ids["resultado"].text = resultado
         
     def d10(self):
         resultado = random.randint(1, 10)
-        print(resultado)
+        resultado = str(resultado)
+        self.root.ids["resultado"].text = resultado
         
     def d12(self):
         resultado = random.randint(1, 12)
-        print(resultado)
+        resultado = str(resultado)
+        self.root.ids["resultado"].text = resultado
         
     def d20(self):
         resultado = random.randint(1, 20)
-        print(resultado)
+        resultado = str(resultado)
+        self.root.ids["resultado"].text = resultado
 
 MeuAplicativo().run()

@@ -1,7 +1,3 @@
-#importa o app, builder (GUI)
-#Cria a aplicação
-#Cria a função
-
 from kivy.app import App
 from kivy.lang import Builder
 from kivy.uix.button import Button

@@ -1,12 +1,15 @@
 from kivy.app import App
 from kivy.lang import Builder
 from kivy.uix.button import Button
+from kivy.core.window import Window
 import random
 
 GUI = Builder.load_file("app.kv")
 
 class MeuAplicativo(App):
     def build(self):
+        Window.size = (530,550)
+        Window.resizable = False
         return GUI
     
     def d4(self):

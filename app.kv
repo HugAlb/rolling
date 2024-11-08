@@ -1,63 +1,122 @@
 GridLayout:
     cols: 1
-    
+    padding: [50, 50, 50, 50]  # Espaçamento para garantir que o conteúdo não fique grudado na borda
+    spacing: 20  # Espaçamento entre os elementos dentro do GridLayout
+
+    # Dado de 4 faces
     BoxLayout:
-        cols:1
+        orientation: 'horizontal'
+        size_hint_y: None
+        height: 50
         Label:
             id: d4
             text: "Dado de 4 faces"
+            size_hint_x: None
+            width: 200
+            halign: "center"
         Button:
             text: 'Rolar'
+            size_hint: None, None
+            width: 200
+            height: 50
             on_press: app.d4()
-    
-    
+
+    # Dado de 6 faces
     BoxLayout:
-        cols:1
+        orientation: 'horizontal'
+        size_hint_y: None
+        height: 50
         Label:
             id: d6
             text: "Dado de 6 faces"
+            size_hint_x: None
+            width: 200
+            halign: "center"
         Button:
             text: 'Rolar'
+            size_hint: None, None
+            width: 200
+            height: 50
             on_press: app.d6()
-        
 
+    # Dado de 8 faces
     BoxLayout:
-        cols:1
+        orientation: 'horizontal'
+        size_hint_y: None
+        height: 50
         Label:
             id: d8
             text: "Dado de 8 faces"
+            size_hint_x: None
+            width: 200
+            halign: "center"
         Button:
             text: 'Rolar'
+            size_hint: None, None
+            width: 200
+            height: 50
             on_press: app.d8()
 
+    # Dado de 10 faces
     BoxLayout:
-        cols:1
+        orientation: 'horizontal'
+        size_hint_y: None
+        height: 50
         Label:
             id: d10
             text: "Dado de 10 faces"
+            size_hint_x: None
+            width: 200
+            halign: "center"
         Button:
             text: 'Rolar'
+            size_hint: None, None
+            width: 200
+            height: 50
             on_press: app.d10()
 
+    # Dado de 12 faces
     BoxLayout:
-        cols:1
+        orientation: 'horizontal'
+        size_hint_y: None
+        height: 50
         Label:
             id: d12
             text: "Dado de 12 faces"
+            size_hint_x: None
+            width: 200
+            halign: "center"
         Button:
             text: 'Rolar'
+            size_hint: None, None
+            width: 200
+            height: 50
             on_press: app.d12()
 
+    # Dado de 20 faces
     BoxLayout:
-        cols:1
+        orientation: 'horizontal'
+        size_hint_y: None
+        height: 50
         Label:
             id: d20
             text: "Dado de 20 faces"
+            size_hint_x: None
+            width: 200
+            halign: "center"
         Button:
             text: 'Rolar'
+            size_hint: None, None
+            width: 200
+            height: 50
             on_press: app.d20()
 
-    BoxLayout:
+    # Resultado
+    FloatLayout:
         Label:
             id: resultado
             text: "Lance o dado!"
+            size_hint: None, None
+            size: 300, 50  # Tamanho fixo para o Label
+            pos_hint: {"center_x": 0.5, "center_y": 0.5}  # Centraliza o Label na tela
+            halign: "center"  # Alinha o texto ao centro do Label
